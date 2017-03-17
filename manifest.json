@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "URL downloader",
+  "short_name": "Downloader",
+  "description": "URL Downloader for Chrome.",
+  "version": "0.0.1",
+  "minimum_chrome_version": "38",
+
+  "icons": {
+    "16": "assets/drive.png",
+    "32": "assets/drive.png",
+    "64": "assets/drive.png",
+    "128": "assets/drive.png"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+  
+  "permissions": [
+    "contextMenus",
+    "downloads"
+  ],
+
+  "browser_action": {
+    "default_title": "URL Downloader",
+    "default_icon": "assets/drive.png",
+    "default_popup": "window.html"
+  }
+}
